@@ -1,15 +1,16 @@
+import Customers from "@/components/Customers";
+import Footer from "@/components/Footer";
+import HomePage from "@/components/HomePage";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import HomePage from "../../components/HomePage";
-import Navbar from "../../components/Navbar";
-import Services from "../../components/Services";
-import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
-    <main>
-      
-    </main>
+    <>
+      <main>
+        <HomePage />
+        <Customers />
+      </main>
+    </>
   );
 }
-
-
