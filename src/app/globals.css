@@ -11,3 +11,18 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+.custom-ping-animation {
+  animation: customPing 1.5s ease-in-out infinite;
+}
+
+@keyframes customPing {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
