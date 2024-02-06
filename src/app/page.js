@@ -7,33 +7,33 @@ import Work from "@/components/Work";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { DefaultAccordion } from "@/components/DefaultAccordion";
+import Partner from "@/components/Partner";
 
 export default function Home() {
   return (
     <>
       <main>
-        <div className="bg-white">
+        <div>
           <HomePage />
         </div>
         <div>
           <Services />
         </div>
-        <div className="bg-red-500">
+        <div>
           <Work />
         </div>
-        <div className="bg-blue-500">
+        <div>
           <WhyUs />
         </div>
-        <div className="bg-blue-500">
+        <div>
           <Testimonial />
         </div>
-        <div className="text-center text-3xl ">Freq asking ques</div>
-        <div className="bg-blue-500">
+        <div>
           <DefaultAccordion />
         </div>
-        {/* <div>
-          <Customers />
-        </div> */}
+        <div>
+          <Partner />
+        </div>
       </main>
     </>
   );

@@ -42,15 +42,17 @@ const Testimonial = () => {
     arrows: false,
   };
   return (
-    <section className="bg-white">
+    <section className="bg-white mt-6 mb-12">
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-        <h1 className="text-4xl pb-10">Testimonials</h1>
+      <h2 className="text-3xl text-gray-900 mb-8 font-semibold tracking-wide uppercase">
+            Testimonials
+          </h2>
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <figure key={index} className="max-w-screen-md mx-auto">
               {/* ... SVG and Blockquote as in your existing code ... */}
               <blockquote>
-                <p className="text-2xl font-medium text-gray-900">
+                <p className="text-xl text-gray-800">
                   {testimonial.quote}
                 </p>
               </blockquote>

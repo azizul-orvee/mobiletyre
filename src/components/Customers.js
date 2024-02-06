@@ -42,11 +42,11 @@ const Customers = () => {
             <input
               type="text"
               placeholder="Enter your postcode"
-              className="py-2 px-4 border-b border-yellow-500 text-gray-800 focus:outline-none"
+              className="py-2 px-4 border-b border-orange-600 text-gray-800 focus:outline-none"
             />
             <button
               onClick={handleClickButton1}
-              className="bg-yellow-500 text-white py-2 px-4 rounded-md mt-4 hover:bg-yellow-600 transition duration-300"
+              className="bg-orange-600 text-white shadow-md shadow-orange-200 py-2 px-4 rounded-md mt-4 hover:bg-orange-800 transition duration-300"
             >
               Check Availability Online
             </button>
@@ -74,28 +74,28 @@ const Customers = () => {
           <input
             type="text"
             placeholder="Enter Your Name"
-            className="py-2 px-4 border-b border-yellow-500 text-gray-800 focus:outline-none"
+            className="py-2 px-4 border-b border-orange-600 text-gray-800 focus:outline-none"
           />
           <input
             type="text"
             placeholder="Enter Tyre Size"
-            className="py-2 px-4 border-b border-yellow-500 text-gray-800 focus:outline-none"
+            className="py-2 px-4 border-b border-orange-600 text-gray-800 focus:outline-none"
           />
           <input
             type="text"
             placeholder="Enter Your Phone Number"
-            className="py-2 px-4 border-b border-yellow-500 text-gray-800 focus:outline-none"
+            className="py-2 px-4 border-b border-orange-600 text-gray-800 focus:outline-none"
           />
           <button
             onClick={handleClickButton2}
-            className="bg-yellow-500 text-white py-2 px-4 rounded-md mt-4 hover:bg-yellow-600 transition duration-300"
+            className="bg-orange-600 text-white py-2 px-4 shadow-md shadow-orange-200 rounded-md mt-4 hover:bg-orange-800 transition duration-300"
           >
             Check Availability Online
           </button>
         </div>
       )}
       {show.thankYou && (
-        <div className="text-green-500 font-bold text-xl mt-4">Thank you!</div>
+        <div className="text-green-500 font-bold text-2xl mt-16">Thank you!</div>
       )}
     </div>
   );

@@ -4,7 +4,10 @@ import React from "react";
 const WhyUs = () => {
   return (
     <section>
-      <div className="container mx-auto px-4 flex flex-col md:flex-row py-10">
+      <h2 className="py-10 text-3xl text-center text-gray-900 font-semibold tracking-wide uppercase">
+        Why choose us
+      </h2>
+      <div className="container mx-auto px-10 flex flex-col md:flex-row py-10">
         <div className="md:w-1/2">
           <Image
             src="/image/gu.webp"
@@ -13,21 +16,23 @@ const WhyUs = () => {
             height={1000}
           />
         </div>
-        <div className="md:w-1/2 bg-red-500 flex justify-center items-center text-center">
+        <div className="md:w-1/2 mx-12 bg-transparent flex justify-center items-center text-center">
           <div>
-            <h1 className="text-4xl font-bold mt-8">Mobile Tyre Fitting</h1>
+            <h1 className="text-3xl text-gray-900 font-semibold m-6">
+              Our <span className="text-orange-600">Customers</span>  Love Us!
+            </h1>
             <p className="text-lg mb-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis esse dolorem veniam in maxime ea quis vitae quibusdam
-              cupiditate sint, officiis vel, tempora pariatur ducimus eum dicta
-              recusandae,
+              Our mobile tire fitting service has captured the hearts of
+              numerous customers. Benefit from the convenience and
+              trustworthiness that our tire solutions offer, becoming part of
+              our delighted and loyal customer community.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 flex flex-col md:flex-row py-10">
-      <div className="md:w-1/2">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row-reverse py-10">
+        <div className="md:w-1/2">
           <Image
             src="/image/gu.webp"
             alt="Your Image"
@@ -35,14 +40,14 @@ const WhyUs = () => {
             height={1000}
           />
         </div>
-        <div className="md:w-1/2 bg-red-500 flex justify-center items-center text-center">
+        <div className="md:w-1/2 mx-12 text-gray-900 bg-transparent flex justify-center items-center text-center">
           <div>
-            <h1 className="text-4xl font-bold mt-8">Mobile Tyre Fitting</h1>
+            <h1 className="text-3xl font-semibold m-6">Our <span className="text-orange-600">Pricing</span>  Guarantee</h1>
             <p className="text-lg mb-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis esse dolorem veniam in maxime ea quis vitae quibusdam
-              cupiditate sint, officiis vel, tempora pariatur ducimus eum dicta
-              recusandae,
+            Our pricing guarantee ensures that you always receive the best value 
+            for your money. We promise to match or beat competitor prices, ensuring 
+            you get quality services at the most competitive rates. Trust us for 
+            unparalleled affordability and value.
             </p>
           </div>
         </div>
@@ -56,14 +61,13 @@ const WhyUs = () => {
             height={1000}
           />
         </div>
-        <div className="md:w-1/2 bg-red-500 flex justify-center items-center text-center">
+        <div className="md:w-1/2 mx-12 text-gray-900 flex justify-center items-center text-center">
           <div>
-            <h1 className="text-4xl font-bold mt-8">Mobile Tyre Fitting</h1>
-            <p className="text-lg mb-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis esse dolorem veniam in maxime ea quis vitae quibusdam
-              cupiditate sint, officiis vel, tempora pariatur ducimus eum dicta
-              recusandae,
+            <h1 className="text-3xl font-semibold m-6">We Also <span className="text-orange-600">Cover Most</span>  of the UK</h1>
+            <p className="text-lg mb-6">
+              Our services extend across the majority of the UK, ensuring that 
+              no matter where you are located, you can benefit from our comprehensive 
+              offerings. Experience reliable and widespread coverage with us.
             </p>
           </div>
         </div>

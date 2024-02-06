@@ -13,39 +13,39 @@ export function DefaultAccordion() {
 
   return (
     <>
-      <Accordion open={open === 1}>
+      <h2 className="text-3xl text-center text-gray-900 pt-10 pb-6 font-semibold tracking-wide ">
+        FAQ
+      </h2>
+      <div className="mx-[10%] px-10 shadow-md shadow-gray-500 pb-8">
+        <Accordion open={open === 1}>
         <AccordionHeader onClick={() => handleOpen(1)}>
-          What is Material Tailwind?
+          How much do mobile tyre fitters charge?
         </AccordionHeader>
         <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
+        Mobile tyre fitting can vary in price this is determined by location 
+        and tyre size please have these details ready either call or submit a 
+        form online. All prices include call out charge, Tyre fitting and the tyre itself.
         </AccordionBody>
-      </Accordion>
-      <Accordion open={open === 2}>
+        </Accordion>
+        <Accordion open={open === 2}>
         <AccordionHeader onClick={() => handleOpen(2)}>
-          How to use Material Tailwind?
+          How long will I be waiting for?
         </AccordionHeader>
         <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
+          Call out times vary between 45-60 minutes this can vary depening on 
+          area, traffic and time of the day please call one off our team for a exact ETA
         </AccordionBody>
-      </Accordion>
-      <Accordion open={open === 3}>
+        </Accordion>
+        <Accordion open={open === 3}>
         <AccordionHeader onClick={() => handleOpen(3)}>
-          What can I do with Material Tailwind?
+          Do you offer emergency mobile tyre fitting?
         </AccordionHeader>
         <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
+          We do. Please let one off our team know its a emergency and 
+          the booking will be treated as priority.
         </AccordionBody>
-      </Accordion>
+        </Accordion>
+      </div>
     </>
   );
 }

@@ -6,9 +6,9 @@ const WorkCard = ({ step, title, icon }) => {
     <>
      
       <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
-      <div className="text-black mb-2 text-lg font-semibold">{step}</div>
-        <div className="text-orange-500 mb-2">{icon}</div>
-        <div className="text-gray-700 text-lg font-semibold">{title}</div>
+      <div className="text-gray-900 mb-2 text-lg font-semibold">{step}</div>
+        <div className="text-blue-300 mb-2">{icon}</div>
+        <div className="text-gray-900 text-lg font-semibold">{title}</div>
       </div>
     </>
   );
