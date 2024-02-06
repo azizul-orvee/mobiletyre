@@ -10,11 +10,26 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 
 .custom-ping-animation {
   animation: customPing 1.5s ease-in-out infinite;
 }
+.blockx {
+  opacity: 1;
+  max-height: 1000px; /* Adjust this value as needed */
+  transition: opacity 0.9s ease, max-height 0.9s ease;
+}
+
+.hiddenx {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.9s ease, max-height 0.1s ease;
+}
+
+
 
 @keyframes customPing {
   0%, 100% {
