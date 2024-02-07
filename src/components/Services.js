@@ -51,27 +51,21 @@ const settings = {
 };
 
 
-
-
-
-
 const Services = () => {
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Update the state based on the window's width only after the component mounts
-    const handleResize = () => setIsMobile(window.innerWidth <= 640);
-    
-    // Call it initially and whenever the window resizes
-    handleResize();
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640);
+    };
+
+    handleResize(); // Initial check
     window.addEventListener('resize', handleResize);
-    
-    // Cleanup the event listener when the component unmounts
-    return () => window.removeEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
-
-
   return (
     <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

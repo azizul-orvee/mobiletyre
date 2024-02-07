@@ -26,11 +26,11 @@ const HomePage = () => {
                 Mobile <span className="text-orange-600">Tyre</span> Fitting
               </h1>
               <div className="text-lg text-gray-900">
-             <p class="mt-4"> Finding us on Google means you're just a step away from the ultimate convenience in tyre fitting. We're ready and available to bring our expert tyre fitting services directly to you, we cover most of the UK.</p>
-              <p class="mt-4">
+             <p className="mt-4"> Finding us on Google means you're just a step away from the ultimate convenience in tyre fitting. We're ready and available to bring our expert tyre fitting services directly to you, we cover most of the UK.</p>
+              <p className="mt-4">
   For immediate assistance, give us a <span className="text-orange-600">call</span> or send us a WhatsApp message.
 </p>
-<p class="mt-4">
+<p className="mt-4">
 You can also check availability directly on our website. We promise to get back to you promptly.
 </p>
 
