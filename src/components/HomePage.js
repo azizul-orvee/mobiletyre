@@ -2,20 +2,22 @@
 import React from "react";
 import Image from "next/image";
 import Customers from "./Customers";
+import tyree from '/public/image/tyree.jpeg'
 
 const HomePage = () => {
   return (
     <>
 
-      <section className="bg-white-500 text-black h-screen mt-16">
+      <section className="bg-white-500 text-black pb-10 mt-16">
       
         <div className="container mx-auto px-4 flex flex-col md:flex-row py-10">
-          <div className="md:w-1/2 rounded-lg overflow-hidden shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl">
+          <div className="md:w-1/2 rounded-lg overflow-hidden shadow-2xl transform transition-all hover:scale-102 hover:shadow-2xl">
             <Image
-              src="/image/gu.webp"
-              alt="Your Image"
-              width={1500}
-              height={1500}
+              src={tyree}
+              alt="Mobile tyre fitting image"
+              width={800}
+              height={500}
+              placeholder="blur"
             />
           </div>
           <div className="md:w-1/2 flex justify-center items-center text-center">
@@ -23,13 +25,16 @@ const HomePage = () => {
               <h1 className="text-4xl font-bold mt-8 text-gray-900 font-sans">
                 Mobile <span className="text-orange-600">Tyre</span> Fitting
               </h1>
-              <p className="text-lg m-4 mx-6 text-gray-900">
-                Our mobile tire fitting service brings convenience to your
-                doorstep. We offer expert tire installation, balancing, and
-                alignment at a location of your choice. Say goodbye to the
-                hassle of visiting a garage – we will ensure your tires are
-                professionally fitted, keeping you safe on the road.
-              </p>
+              <div className="text-lg text-gray-900">
+             <p class="mt-4"> Finding us on Google means you're just a step away from the ultimate convenience in tyre fitting. We're ready and available to bring our expert tyre fitting services directly to you, we cover most of the UK.</p>
+              <p class="mt-4">
+  For immediate assistance, give us a <span className="text-orange-600">call</span> or send us a WhatsApp message.
+</p>
+<p class="mt-4">
+You can also check availability directly on our website. We promise to get back to you promptly.
+</p>
+
+              </div>
             </div>
           </div>
         </div>

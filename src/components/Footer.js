@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="flex justify-evenly items-center">
             <div className="px-6 py-1 bg-gray-200 rounded-lg shadow-md cursor-pointer flex items-center justify-center">
               <div className="icon-container custom-ping-animation">
-                <MdWifiCalling3 size={50} style={{ fill: "#827c07" }} />
+                <MdWifiCalling3 size={50} style={{ fill: "#f5b402" }} />
               </div>
               <div className="text-xl tracking-widest p-4">
                 <p>01716960738</p>
@@ -50,27 +50,8 @@ const Footer = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                   stroke="#1fdb2c"
-                  className="color-changing-svg"
+                  className="custom-ping-animation duration-700"
                 >
-                  <style>
-                    {`
-      @keyframes changeColor {
-        0% {
-          fill: #1fdb2c;
-        }
-        50% {
-          fill:#88e78f;
-        }
-        100% {
-          fill: #5b8b5e;
-        }
-      }
-      .color-changing-svg {
-        animation: changeColor 5s linear infinite;
-        transition: fill 0.5s ease-in-out;
-      }
-    `}
-                  </style>
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"

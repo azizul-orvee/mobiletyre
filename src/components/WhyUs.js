@@ -1,5 +1,11 @@
+'use client';
 import Image from "next/image";
 import React from "react";
+import map from '/public/image/map.jpeg'
+import handshake from '/public/image/handshake.jpeg'
+import tyrestock from '/public/image/tyrestock.jpeg'
+
+
 
 const WhyUs = () => {
   return (
@@ -8,12 +14,13 @@ const WhyUs = () => {
         Why choose us
       </h2>
       <div className="container mx-auto px-10 flex flex-col md:flex-row py-10">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 rounded-lg overflow-hidden shadow-2xl transform transition-all hover:scale-102 hover:shadow-2xl">
           <Image
-            src="/image/gu.webp"
+            src={handshake}
             alt="Your Image"
-            width={1000}
-            height={1000}
+            placeholder="blur"
+            width={800}
+            height={500}
           />
         </div>
         <div className="md:w-1/2 mx-12 bg-transparent flex justify-center items-center text-center">
@@ -32,12 +39,13 @@ const WhyUs = () => {
       </div>
 
       <div className="container mx-auto px-4 flex flex-col md:flex-row-reverse py-10">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 rounded-lg overflow-hidden shadow-2xl transform transition-all hover:scale-102 hover:shadow-2xl">
           <Image
-            src="/image/gu.webp"
+            src={tyrestock}
             alt="Your Image"
-            width={1000}
-            height={1000}
+            width={800}
+            height={500}
+            placeholder="blur"
           />
         </div>
         <div className="md:w-1/2 mx-12 text-gray-900 bg-transparent flex justify-center items-center text-center">
@@ -53,12 +61,13 @@ const WhyUs = () => {
         </div>
       </div>
       <div className="container mx-auto px-4 flex flex-col md:flex-row py-10">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 rounded-lg overflow-hidden shadow-2xl transform transition-all hover:scale-102 hover:shadow-2xl">
           <Image
-            src="/image/gu.webp"
-            alt="Your Image"
-            width={1000}
-            height={1000}
+            src={map}
+            alt="All Over UK Map Image"
+            placeholder="blur"
+            width={800}
+            height={500}
           />
         </div>
         <div className="md:w-1/2 mx-12 text-gray-900 flex justify-center items-center text-center">

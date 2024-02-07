@@ -3,31 +3,26 @@ import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 
+
 const Testimonial = () => {
   const testimonials = [
     {
       quote:
-        "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
-      image:
-        "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png",
+        "I was stuck on the motorway with a flat tyre, feeling quite stressed about the situation. I called Azanate mobile tyre fitting service, and they were incredible! They arrived quickly, had me back on the road in no time, and to my surprise, the price was the best I've found. Truly a lifesaver",
       name: "Micheal Gough",
-      title: "CEO at Google",
+      title: "London",
     },
     {
       quote:
-        "Incredible value for money. The flexibility and capability of this service far exceeded my expectations. Definitely recommend for any startup looking to kickstart their project.",
-      image:
-        "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jane-doe.png",
-      name: "Jane Doe",
-      title: "CTO at StartupXYZ",
+        "When I found myself stranded with a tyre issue, I wasn't sure what to do next. Thankfully, I reached out to this team, and they were nothing short of amazing. Not only did they offer a very competitive price, but their friendliness and efficiency made a stressful situation much easier. Highly recommend!",
+      name: "Alex B.",
+      title: "Manchester",
     },
     {
       quote:
-        "A fantastic tool for designers and developers alike. It's made our workflow much more efficient, and the ease of use is unparalleled.",
-      image:
-        "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/john-smith.png",
+        "I never thought getting a tyre replaced could be such a hassle-free experience until I needed help on a busy day. This mobile tyre fitting service came to my rescue. Their team was super friendly, the service was fast, and the price was unbeatable. I'm definitely keeping their number for any future tyre troubles!",
       name: "John Smith",
-      title: "Lead Designer at Creatives Inc.",
+      title: "Birmingham",
     },
   ];
 
@@ -49,20 +44,14 @@ const Testimonial = () => {
           </h2>
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
-            <figure key={index} className="max-w-screen-md mx-auto">
+            <figure key={index} className="max-w-screen-md mx-auto bg-gray-50">
               {/* ... SVG and Blockquote as in your existing code ... */}
               <blockquote>
-                <p className="text-xl text-gray-800">
+                <p className="text-xl text-gray-800 bg-gray-50 rounded-full italic">
                   {testimonial.quote}
                 </p>
               </blockquote>
               <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                <Image
-                  width={40}
-                  height={40}
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                />
                 <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                   <div className="pr-3 font-medium text-gray-900">
                     {testimonial.name}

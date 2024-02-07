@@ -1,22 +1,26 @@
 import React from "react";
 import { GiFlatTire } from "react-icons/gi";
 import WorkCard from "./WorkCard";
+import location from '/public/image/location.jpeg'
+import check from '/public/image/check.jpeg'
+import roadcar from '/public/image/roadcar.jpeg'
+
 
 const WorkData = [
   {
     step: "Step 1",
-    title: "Mobile Tyre Fitting",
-    icon: <GiFlatTire size={100} />,
+    title: "Tell us your location",
+    icon: location,
   },
   {
     step: "Step 2",
-    title: "Van Tyre Fitting",
-    icon: <GiFlatTire size={100} />,
+    title: "Give us your tyre size",
+    icon: check,
   },
   {
     step: "Step 3",
-    title: "4x4 Tyre Fitting",
-    icon: <GiFlatTire size={100} />,
+    title: "You are ready to rock 'n roll again",
+    icon: roadcar,
   },
 ];
 
@@ -35,7 +39,7 @@ const Work = () => {
               key={index}
               step={service.step}
               title={service.title}
-              icon={service.icon}
+              image={service.icon}
             />
           ))}
         </div>

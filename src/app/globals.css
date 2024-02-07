@@ -14,7 +14,7 @@
 }
 
 .custom-ping-animation {
-  animation: customPing 1.5s ease-in-out infinite;
+  animation: customPing 2.5s ease-in-out infinite;
 }
 .blockx {
   opacity: 1;

@@ -1,8 +1,14 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GiFlatTire } from "react-icons/gi";
 import ServiceCard from "./ServiceCard";
 import Slider from "react-slick";
+import { TbCarSuv } from "react-icons/tb";
+import { FaVanShuttle } from "react-icons/fa6";
+import { FaCarBattery } from "react-icons/fa6";
+import { FaCarCrash } from "react-icons/fa";
+import { FaBatteryQuarter } from "react-icons/fa6";
+
 
 const servicesData = [
   {
@@ -11,30 +17,30 @@ const servicesData = [
   },
   {
     title: "Van Tyre Fitting",
-    icon: <GiFlatTire size={100} />,
+    icon: <FaVanShuttle size={100} />,
   },
   {
     title: "4x4 Tyre Fitting",
-    icon: <GiFlatTire size={100} />,
+    icon: <TbCarSuv size={100} />,
   },
   {
     title: "Battery Replacement",
-    icon: <GiFlatTire size={100} />,
+    icon: <FaCarBattery size={100} />,
   },
   {
     title: "Breakdown Recovery",
-    icon: <GiFlatTire size={100} />,
+    icon: <FaCarCrash size={100} />,
   },
   {
-    title: "Free Putkimara",
-    icon: <GiFlatTire size={100} />,
+    title: "Jump Start",
+    icon: <FaBatteryQuarter size={100} />,
   },
 ];
 
 
 
 const settings = {
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
@@ -44,10 +50,28 @@ const settings = {
   arrows: false,
 };
 
-const isMobile = window.innerWidth <=640;
-console.log(isMobile);
+
+
+
+
 
 const Services = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Update the state based on the window's width only after the component mounts
+    const handleResize = () => setIsMobile(window.innerWidth <= 640);
+    
+    // Call it initially and whenever the window resizes
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    
+    // Cleanup the event listener when the component unmounts
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
   return (
     <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
