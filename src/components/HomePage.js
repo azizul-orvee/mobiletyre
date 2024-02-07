@@ -1,15 +1,16 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useState } from "react";
 import Customers from "./Customers";
 
 const HomePage = () => {
   return (
     <>
+
       <section className="bg-white-500 text-black h-screen mt-16">
+      
         <div className="container mx-auto px-4 flex flex-col md:flex-row py-10">
-          <div className="md:w-1/2 p-4 bg-gray-100 rounded-lg overflow-hidden shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl">
+          <div className="md:w-1/2 rounded-lg overflow-hidden shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl">
             <Image
               src="/image/gu.webp"
               alt="Your Image"
@@ -35,7 +36,9 @@ const HomePage = () => {
         <div className="flex flex-col items-center mt-[-25px] lg:mt-10">
           <Customers />
         </div>
+      
       </section>
+
     </>
   );
 };
