@@ -12,6 +12,7 @@ const WorkCard = ({ step, title, image }) => {
               src={image}
               width={800}
               height={500}
+              alt={''}
             />
         <div className="text-gray-900 text-lg font-semibold py-2">{title}</div>
       </div>

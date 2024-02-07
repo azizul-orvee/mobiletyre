@@ -9,7 +9,7 @@ const HomePage = () => {
     <>
 
       <section className="bg-white-500 text-black pb-10 mt-16">
-      
+      s
         <div className="container mx-auto px-4 flex flex-col md:flex-row py-10">
           <div className="md:w-1/2 rounded-lg overflow-hidden shadow-2xl transform transition-all hover:scale-102 hover:shadow-2xl">
             <Image
@@ -26,11 +26,11 @@ const HomePage = () => {
                 Mobile <span className="text-orange-600">Tyre</span> Fitting
               </h1>
               <div className="text-lg text-gray-900">
-             <p className="mt-4"> Finding us on Google means you're just a step away from the ultimate convenience in tyre fitting. We're ready and available to bring our expert tyre fitting services directly to you, we cover most of the UK.</p>
+             <p className="mt-4"> Finding us on Google means you are just a step away from the ultimate convenience in tyre fitting. We are ready and available to bring our expert tyre fitting services directly to you. We cover most of the UK.</p>
               <p className="mt-4">
   For immediate assistance, give us a <span className="text-orange-600">call</span> or send us a WhatsApp message.
 </p>
-<p className="mt-4">
+<p class="mt-4">
 You can also check availability directly on our website. We promise to get back to you promptly.
 </p>
 
