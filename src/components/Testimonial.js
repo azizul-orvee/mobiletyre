@@ -8,7 +8,7 @@ const Testimonial = () => {
   const testimonials = [
     {
       quote:
-        "I was stuck on the motorway with a flat tyre, feeling quite stressed about the situation. I called Azanate mobile tyre fitting service, and they were incredible! They arrived quickly, had me back on the road in no time, and to my surprise, the price was the best I've found. Truly a lifesaver",
+        "I was stuck on the motorway with a flat tyre, feeling quite stressed about the situation. I called Azanate emergency mobile tyre fitting service, and they were incredible! They arrived quickly, had me back on the road in no time, and to my surprise, the price was the best I've found. Truly a lifesaver",
       name: "Micheal Gough",
       title: "London",
     },
@@ -20,7 +20,7 @@ const Testimonial = () => {
     },
     {
       quote:
-        "I never thought getting a tyre replaced could be such a hassle-free experience until I needed help on a busy day. This mobile tyre fitting service came to my rescue. Their team was super friendly, the service was fast, and the price was unbeatable. I'm definitely keeping their number for any future tyre troubles!",
+        "I never thought getting a tyre replaced could be such a hassle-free experience until I needed help on a busy day. This 24 hour mobile tyre fitting service came to my rescue. Their team was super friendly, the service was fast, and the price was unbeatable. I'm definitely keeping their number for any future tyre troubles!",
       name: "John Smith",
       title: "Birmingham",
     },

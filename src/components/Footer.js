@@ -104,10 +104,10 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500 font-medium">
                 <li>
-                  <p>Email: support@azanate.co.uk</p>
+                  <p>Email:<a href="mailto:support@azanate.co.uk" className="text-blue-500">support@azanate.co.uk</a></p>
                 </li>
                 <li>
-                  <p>Phone: 03300 432 940 </p>
+                  <p>Phone:<a href='tel:03300432940'>03300 432 940</a></p>
                 </li>
               </ul>
             </div>

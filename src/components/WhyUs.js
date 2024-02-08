@@ -54,7 +54,7 @@ const WhyUs = () => {
             <p className="text-lg">
             Our pricing guarantee ensures that you always receive the best value 
             for your money. We promise to match or beat competitor prices, ensuring 
-            you get quality services at the most competitive rates. Trust us for 
+            you get quality tyre fitting services at the most competitive rates. Trust us for 
             unparalleled affordability and value.
             </p>
           </div>
@@ -74,9 +74,9 @@ const WhyUs = () => {
           <div>
             <h1 className="text-xl font-semibold m-6">We Also <span className="text-orange-600">Cover Most</span>  of the UK</h1>
             <p className="text-lg">
-              Our services extend across the majority of the UK, ensuring that 
-              no matter where you are located, you can benefit from our comprehensive 
-              offerings. Experience reliable and widespread coverage with us.
+              Our emergency services extend across the majority of the UK, ensuring that 
+              no matter where you are located, you can benefit from our emergency call out 
+              service. Experience reliable and widespread tyre fitting coverage with us.
             </p>
           </div>
         </div>
