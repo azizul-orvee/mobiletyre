@@ -23,12 +23,12 @@ const WhyUs = () => {
             height={500}
           />
         </div>
-        <div className="md:w-1/2 mx-12 bg-transparent flex justify-center items-center text-center">
+        <div className="md:w-1/2 bg-transparent flex justify-center items-center text-center">
           <div>
-            <h1 className="text-3xl text-gray-900 font-semibold m-6">
+            <h1 className="text-xl text-gray-900 font-semibold m-6">
               Our <span className="text-orange-600">Customers</span>  Love Us!
             </h1>
-            <p className="text-lg mb-4">
+            <p className="text-lg">
               Our mobile tire fitting service has captured the hearts of
               numerous customers. Benefit from the convenience and
               trustworthiness that our tire solutions offer, becoming part of
@@ -48,10 +48,10 @@ const WhyUs = () => {
             placeholder="blur"
           />
         </div>
-        <div className="md:w-1/2 mx-12 text-gray-900 bg-transparent flex justify-center items-center text-center">
+        <div className="md:w-1/2 text-gray-900 bg-transparent flex justify-center items-center text-center">
           <div>
-            <h1 className="text-3xl font-semibold m-6">Our <span className="text-orange-600">Pricing</span>  Guarantee</h1>
-            <p className="text-lg mb-4">
+            <h1 className="text-xl font-semibold m-6">Our <span className="text-orange-600">Pricing</span>  Guarantee</h1>
+            <p className="text-lg">
             Our pricing guarantee ensures that you always receive the best value 
             for your money. We promise to match or beat competitor prices, ensuring 
             you get quality services at the most competitive rates. Trust us for 
@@ -70,10 +70,10 @@ const WhyUs = () => {
             height={500}
           />
         </div>
-        <div className="md:w-1/2 mx-12 text-gray-900 flex justify-center items-center text-center">
+        <div className="md:w-1/2 text-gray-900 flex justify-center items-center text-center">
           <div>
-            <h1 className="text-3xl font-semibold m-6">We Also <span className="text-orange-600">Cover Most</span>  of the UK</h1>
-            <p className="text-lg mb-6">
+            <h1 className="text-xl font-semibold m-6">We Also <span className="text-orange-600">Cover Most</span>  of the UK</h1>
+            <p className="text-lg">
               Our services extend across the majority of the UK, ensuring that 
               no matter where you are located, you can benefit from our comprehensive 
               offerings. Experience reliable and widespread coverage with us.

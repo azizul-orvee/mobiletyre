@@ -88,7 +88,7 @@ const Customers = () => {
               className="py-2 px-4 border-b border-orange-600 text-gray-800 focus:outline-none"
             />
             <button
-              className="bg-orange-600 text-white shadow-md shadow-orange-200 py-2 px-4 rounded-md mt-4 hover:bg-orange-800 transition duration-300"
+              className="bg-orange-600 text-white shadow-md shadow-orange-200 py-3 px-6 rounded-md mt-4"
             >
               Check Availability Online
             </button>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import React from "react";
 import { MdWifiCalling3 } from "react-icons/md";
+import logo from '/public/image/azanatelogo.png'
 
 const Footer = () => {
   const [scrollWithSecondDiv, setScrollWithSecondDiv] = useState(false);
@@ -31,17 +32,19 @@ const Footer = () => {
           className={`md:hidden w-full py-2 bg-gray-100 text-black fixed bottom-0`}
         >
           <div className="flex justify-evenly items-center">
+            <Link href='tel:03300432940'>
             <div className="px-6 py-1 bg-gray-200 rounded-lg shadow-md cursor-pointer flex items-center justify-center">
               <div className="icon-container custom-ping-animation">
-                <MdWifiCalling3 size={50} style={{ fill: "#f5b402" }} />
+                <MdWifiCalling3 size={50} style={{ fill: "#dd6b20" }} />
               </div>
               <div className="text-xl tracking-widest p-4">
-                <p>01716960738</p>
+                <p>03300 432 940</p>
               </div>
             </div>
+            </Link>
             {/* WhatsApp logo or icon */}
             <div className="bg-gray-200 px-5 py-2 rounded-lg shadow-md cursor-pointer">
-              <Link href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER">
+              <Link href="https://wa.me/+443300432940">
                 <svg
                   width="50"
                   height="50"
@@ -82,20 +85,18 @@ const Footer = () => {
       {/* Second Div */}
 
       <div className="second-div">
-        <div className="bg-gray-900 p-5">
+        <div className="bg-blue-gray-50 p-5">
           <div className="md:flex md:justify-between mx-[9%] py-6">
             <div className="mb-4 md:mt-4 md:mb-0">
-              <a href="https://flowbite.com/" className="flex items-center">
-                <Image
-                  src="https://flowbite.com/docs/images/logo.svg"
-                  alt="FlowBite Logo"
-                  width={50}
-                  height={50}
-                />
-                <span className="mx-4 text-2xl font-semibold whitespace-nowrap text-white">
-                  Flowbite
-                </span>
-              </a>
+              <div className="flex items-center">
+              <Image
+              src={logo}
+              alt="Azanate Logo"
+              height={200}
+              width={200}
+            />
+            </div>
+
             </div>
             <div>
               <h2 className="text-sm font-semibold uppercase text-gray-400">
@@ -103,13 +104,10 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500 font-medium">
                 <li>
-                  <p>Email: accounts@creationsgroup.co.uk</p>
+                  <p>Email: support@azanate.co.uk</p>
                 </li>
                 <li>
-                  <p>Phone: 03300 432 801 </p>
-                </li>
-                <li>
-                  <p>Mobile: 07935 390 891</p>
+                  <p>Phone: 03300 432 940 </p>
                 </li>
               </ul>
             </div>
@@ -119,14 +117,14 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-600 font-medium">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <Link href="/privacy" className="hover:underline">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <Link href="/terms" className="hover:underline">
                     Terms &amp; Conditions
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -135,10 +133,8 @@ const Footer = () => {
           <hr className="my-6 sm:mx-auto lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-center">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-              © 2023{" "}
-              <a href="https://flowbite.com/" className="hover:underline">
-                Flowbit™
-              </a>
+              © 2024{" "}
+                Azanate
               . All Rights Reserved.
             </span>
           </div>

@@ -1,6 +1,8 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import logo from '/public/image/azanatelogo.png'
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -25,15 +27,24 @@ function Navbar() {
     <div>
       <nav
         className={`w-full top-0 left-0 right-0 z-10 transition-all duration-100 shadow-sm fixed ease-in-out ${
-          scroll ? "border-b-2 bg-white" : "bg-white"
+          scroll ? "border-b-2 bg-gray-100" : "bg-white"
         }`}
       >
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 h-20">
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className="flex items-center justify-between py-1 md:py-5 md:block h-full">
               {/* LOGO */}
               <Link href="/">
-                <h2 className="text-2xl text-cyan-600 font-bold ">LOGO</h2>
+              <Image
+              src={logo}
+              alt="Azanate Logo"
+              height={200}
+              width={200}
+              className="h-full object-contain"
+   
+            />
+
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
@@ -100,27 +111,27 @@ function Navbar() {
               }`}
             >
               <ul className="md:flex">
-                <li className="md:hidden text-xl text-orange-600 py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+              <li className="md:hidden text-xl bg-gray-100 text-orange-600 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900">
                   <Link href="#" onClick={() => setNavbar(!navbar)}>
                     Mobile Tyre Fitting
                   </Link>
                 </li>
-                <li className="md:hidden text-xl text-orange-600 py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="md:hidden text-xl bg-gray-50 text-orange-600 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900">
                   <Link href="#" onClick={() => setNavbar(!navbar)}>
                     Emergency Mobile Tyre Fitting
                   </Link>
                 </li>
-                <li className="md:hidden text-xl text-orange-600 py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="md:hidden text-xl bg-gray-100 text-orange-600 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900">
                   <Link href="#" onClick={() => setNavbar(!navbar)}>
                     Mobile Tyre Fitters
                   </Link>
                 </li>
-                <li className="text-xl text-orange-600 py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="text-xl text-orange-600 bg-gray-50 py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link href="#" onClick={() => setNavbar(!navbar)}>
                     About Us
                   </Link>
                 </li>
-                <li className="text-xl text-orange-600 py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="text-xl text-orange-600 py-2 px-6 bg-gray-100 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link href="#" onClick={() => setNavbar(!navbar)}>
                     Contact
                   </Link>
