@@ -112,17 +112,17 @@ function Navbar() {
             >
               <ul className="md:flex">
               <li className="md:hidden text-xl bg-gray-100 text-orange-600 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900">
-                  <Link href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/mobile-tyre-fitting" onClick={() => setNavbar(!navbar)}>
                     Mobile Tyre Fitting
                   </Link>
                 </li>
                 <li className="md:hidden text-xl bg-gray-50 text-orange-600 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900">
-                  <Link href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/emergency-mobile-tyre-fitting" onClick={() => setNavbar(!navbar)}>
                     Emergency Mobile Tyre Fitting
                   </Link>
                 </li>
                 <li className="md:hidden text-xl bg-gray-100 text-orange-600 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900">
-                  <Link href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/mobile-tyre-fitters" onClick={() => setNavbar(!navbar)}>
                     Mobile Tyre Fitters
                   </Link>
                 </li>
