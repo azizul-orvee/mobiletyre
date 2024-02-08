@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { ColorRing } from "react-loader-spinner";
+import { FallingLines } from "react-loader-spinner";
 import axios from 'axios';
 
 const Customers = () => {
@@ -100,16 +100,13 @@ const Customers = () => {
 
       {show.loader && (
         <>
-          <p>checking</p>
-          <ColorRing
-            visible={true}
-            height="80"
-            width="80"
-            ariaLabel="color-ring-loading"
-            wrapperStyle={{}}
-            wrapperClass="color-ring-wrapper"
-            colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
-          />
+        Checking...
+     <FallingLines
+  color="#dd6b20"
+  width="100"
+  visible={true}
+  ariaLabel="falling-circles-loading"
+  />
         </>
       )}
 
@@ -148,7 +145,11 @@ const Customers = () => {
       )}
       {show.thankYou && (
         <>
-        <div className="text-green-500 font-bold text-2xl mt-16">Thank you!</div>
+        <div className="text-green-500 font-bold text-2xl mt-16 text-center">Thank you! We will get back to you shortly</div>
+        <p onClick={() => setShow({button1: true,
+    loader: false,
+    button2: false,
+    thankYou: false})} className="cursor-pointer text-center underline">Request another?</p>
         </>
       )}
     </div>

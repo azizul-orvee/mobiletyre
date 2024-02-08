@@ -29,7 +29,7 @@ const WhyUs = () => {
               Our <span className="text-orange-600">Customers</span>  Love Us!
             </h1>
             <p className="text-lg">
-              Our mobile tire fitting service has captured the hearts of
+              Our emergency mobile tire fitting service has captured the hearts of
               numerous customers. Benefit from the convenience and
               trustworthiness that our tire solutions offer, becoming part of
               our delighted and loyal customer community.

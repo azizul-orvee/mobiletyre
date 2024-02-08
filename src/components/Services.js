@@ -12,7 +12,7 @@ import { FaBatteryQuarter } from "react-icons/fa6";
 
 const servicesData = [
   {
-    title: "Mobile Tyre Fitting",
+    title: "24hr Mobile Tyre Fitting",
     icon: <GiFlatTire size={100} />,
   },
   {

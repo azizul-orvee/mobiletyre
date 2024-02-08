@@ -127,12 +127,12 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="text-xl text-orange-600 bg-gray-50 py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/about" onClick={() => setNavbar(!navbar)}>
                     About Us
                   </Link>
                 </li>
                 <li className="text-xl text-orange-600 py-2 px-6 bg-gray-100 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/contact" onClick={() => setNavbar(!navbar)}>
                     Contact
                   </Link>
                 </li>
