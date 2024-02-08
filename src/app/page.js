@@ -8,11 +8,13 @@ import "slick-carousel/slick/slick-theme.css";
 import { DefaultAccordion } from "@/components/DefaultAccordion";
 
 
+
+
 export default function Home() {
   return (
     <>
       <main>
-        <div className="">
+        <div>
           <HomePage />
         </div>
         <div>

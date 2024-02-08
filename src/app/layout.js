@@ -7,8 +7,9 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Mobile Tyre Mate",
-  description: "We are a mobile tyre fitting service provider.",
+  title: "Azanate Mobile Tyre",
+  description: "We are a mobile tyre fitting service provider. We provide our service in all over UK. We also provide emergency tyre fitting.",
+
 };
 
 export default function RootLayout({ children }) {
