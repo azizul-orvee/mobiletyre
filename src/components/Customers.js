@@ -46,7 +46,6 @@ const Customers = () => {
         Tyre: ${formData.size}`
       });
       setFormData({});
-      router.push('/thank-you');
 
     } catch (error) {
       console.error('Error sending message:', error);
