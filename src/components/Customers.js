@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import { FallingLines } from "react-loader-spinner";
 import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 const Customers = () => {
+  const router = useRouter();
 
   const [formData, setFormData] = useState({});
 
@@ -44,6 +46,7 @@ const Customers = () => {
         Tyre: ${formData.size}`
       });
       setFormData({});
+      router.push('/thank-you');
 
     } catch (error) {
       console.error('Error sending message:', error);
@@ -140,7 +143,7 @@ const Customers = () => {
           id="Form-track"
             className="bg-orange-600 text-white py-2 px-4 shadow-md shadow-orange-200 rounded-md mt-4 hover:bg-orange-800 transition duration-300"
           >
-            Check Availability Online
+            Check Availability Instantly 
           </button>
         </form>
       )}
