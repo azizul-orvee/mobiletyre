@@ -16,7 +16,7 @@ const HomePage = () => {
               alt="Mobile tyre fitting image"
               width={800}
               height={500}
-              priority
+              placeholder="blur"
             />
           </div>
           <div className="md:w-1/2 flex justify-center items-center text-center">
