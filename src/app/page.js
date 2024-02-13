@@ -1,13 +1,30 @@
-import HomePage from "@/components/HomePage";
-import Services from "@/components/Services";
-import Testimonial from "@/components/Testimonial";
-import WhyUs from "@/components/WhyUs";
-import Work from "@/components/Work";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { DefaultAccordion } from "@/components/DefaultAccordion";
 
+import dynamic from 'next/dynamic'
+ 
+const DynamicHomePage = dynamic(() => import('@/components/HomePage'), {
+  loading: () => <p>Loading...</p>,
+})
 
+const DynamicServices = dynamic(() => import('@/components/Services'), {
+  loading: () => <p>Loading...</p>,
+})
+
+const DynamicTestimonial = dynamic(() => import('@/components/Testimonial'), {
+  loading: () => <p>Loading...</p>,
+})
+ 
+
+const DynamicWhyUs = dynamic(() => import('@/components/WhyUs'), {
+  loading: () => <p>Loading...</p>,
+})
+ 
+const DynamicWork = dynamic(() => import('@/components/Work'), {
+  loading: () => <p>Loading...</p>,
+})
+ 
 
 
 export default function Home() {
@@ -15,19 +32,19 @@ export default function Home() {
     <>
       <main>
         <div>
-          <HomePage />
+          <DynamicHomePage />
         </div>
         <div>
-          <Services />
+          <DynamicServices />
         </div>
         <div>
-          <Work />
+          <DynamicWork />
         </div>
         <div>
-          <WhyUs />
+          <DynamicWhyUs />
         </div>
         <div>
-          <Testimonial />
+          <DynamicTestimonial />
         </div>
         <div>
           <DefaultAccordion />
