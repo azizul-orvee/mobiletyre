@@ -1,9 +1,9 @@
 'use client';
 import Image from "next/image";
 import React from "react";
-import map from '/public/image/map.jpeg'
-import handshake from '/public/image/handshake.jpeg'
-import tyrestock from '/public/image/tyrestock.jpeg'
+import map from '/public/image/map.webp'
+import handshake from '/public/image/handshake.webp'
+import tyrestock from '/public/image/tyrestock.webp'
 
 
 

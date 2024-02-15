@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Customers from "./Customers";
-import tyree from '/public/image/tyree.jpeg'
+import tyree from '/public/image/tyree.webp'
 
 const EmergencyHome = () => {
   return (

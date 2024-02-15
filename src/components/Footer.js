@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import React from "react";
 import { MdWifiCalling3 } from "react-icons/md";
-import logo from '/public/image/azanatelogo.png'
+import logo from '/public/image/azanatelogo.webp'
 
 const Footer = () => {
   const [scrollWithSecondDiv, setScrollWithSecondDiv] = useState(false);
@@ -29,21 +29,23 @@ const Footer = () => {
     <footer>
       <div>
         <div
-          className={`md:hidden w-full py-2 bg-gray-100 text-black fixed bottom-0`}
+          className={`md:hidden w-full py-2 bg-blue-gray-50 text-black fixed bottom-0`}
         >
           <div className="flex justify-evenly items-center">
             <a href='tel:03300432940'>
-            <div className="px-6 py-1 bg-gray-200 rounded-lg shadow-md cursor-pointer flex items-center justify-center">
+            <div className="px-6 py-1 bg-gray-300 rounded-lg shadow-md cursor-pointer flex items-center gap-1 justify-center">
               <div className="icon-container custom-ping-animation">
                 <MdWifiCalling3 size={50} style={{ fill: "#dd6b20" }} />
               </div>
-              <div className="text-xl tracking-widest p-4">
-                <p>03300 432 940</p>
+              <div className="">
+                
+                <p className="font-bold text-2xl tracking-widest">03300 432 940</p>
+                <p className="text-center text-xs">Call Now!</p>
               </div>
             </div>
             </a>
             {/* WhatsApp logo or icon */}
-            <div className="bg-gray-200 px-5 py-2 rounded-lg shadow-md cursor-pointer">
+            <div className="bg-gray-300 px-5 py-2 rounded-lg shadow-md cursor-pointer">
               <a href="https://wa.me/+443300432940">
                 <svg
                   width="50"

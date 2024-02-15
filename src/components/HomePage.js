@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Customers from "./Customers";
-import tyree from '/public/image/tyree.jpeg'
+import tyree from '/public/image/tyree.webp'
 
 const HomePage = () => {
   return (
@@ -25,7 +25,7 @@ const HomePage = () => {
                 Mobile <span className="text-orange-600">Tyre</span> Fitting
               </h1>
               <div className="text-lg text-gray-900">
-             <p className="mt-4"> Finding us on Google means you are just a step away from the ultimate convenience in tyre fitting. We are ready and available to bring our expert tyre fitting services directly to you within <span className="text-orange-600">30-60 mins.</span> We cover most of the UK.</p>
+             <p className="mt-4"> Finding us on Google means you are just a step away from the ultimate convenience in emergency mobile tyre fitting. We are ready and available to bring our expert tyre fitting services directly to you within <span className="text-orange-600">30-60 mins.</span> We cover most of the UK.</p>
               <p className="mt-4">
   For immediate assistance, give us a <span className="text-orange-600 underline"> <a href='tel:03300432940'>call</a>
     </span> or send us a <span className="text-orange-600 underline"> <a href="https://wa.me/+443300432940">WhatsApp</a> </span>  message.

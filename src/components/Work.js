@@ -1,9 +1,9 @@
 import React from "react";
 import { GiFlatTire } from "react-icons/gi";
 import WorkCard from "./WorkCard";
-import location from '/public/image/location.jpeg'
-import check from '/public/image/check.jpeg'
-import roadcar from '/public/image/roadcar.jpeg'
+import location from '/public/image/location.webp'
+import check from '/public/image/check.webp'
+import roadcar from '/public/image/roadcar.webp'
 
 
 const WorkData = [

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import logo from '/public/image/azanatelogo.png'
+import logo from '/public/image/azanatelogo.webp'
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
