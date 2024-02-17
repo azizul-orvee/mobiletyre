@@ -25,14 +25,18 @@ const EmergencyHome = () => {
               <h1 className="text-4xl font-bold mt-8 text-gray-900 font-sans">Emergency 
                 Mobile <span className="text-orange-600">Tyre</span> Fitting
               </h1>
+              <br />
+              <h2 className="italic font-palanquin font-semibold text-xl animate-pulse bg-blue-50 duration-1000 rounded-2xl p-1 shadow-2xl">Fast, Nationwide Tyre Service: Aiming for 
+              <span className="text-orange-600"> 30 to 60 </span>  
+               Minutes Everywhere in the UK</h2>
               <div className="text-lg text-gray-900">
-             <p className="mt-4"> Finding us on Google means you are just a step away from the ultimate convenience in tyre fitting. We are ready and available to bring our expert tyre fitting services directly to you within <span className="text-orange-600">30-60 mins.</span> We cover most of the UK.</p>
+             <p className="mt-4"> Finding us on Google means you are just a step away from the ultimate convenience in emergency mobile tyre fitting. We are ready and available to bring our expert tyre fitting services directly to you. We cover most of the UK.</p>
               <p className="mt-4">
   For immediate assistance, give us a <span className="text-orange-600 underline"> <a href='tel:03300432940'>call</a>
     </span> or send us a <span className="text-orange-600 underline"> <a href="https://wa.me/+443300432940">WhatsApp</a> </span>  message.
 </p>
 <p className="mt-4">
-You can also check availability directly on our website. We promise to get back to you promptly.
+You can also check emergency mobile tyre fitting availability directly on our website.
 </p>
 
               </div>

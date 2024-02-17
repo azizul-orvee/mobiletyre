@@ -72,7 +72,7 @@ const Services = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl text-gray-900 font-semibold tracking-wide uppercase">Our services</h2>
           <p className="mt-2 leading-8 tracking-tight text-gray-900">
-          Book online with Azanet service and get services in your chosen location at any suitable time.
+          Book online with Azanet Mobile Tyre Fitting and get help in your chosen location at any suitable time.
           </p>
         </div>
         {isMobile ? (

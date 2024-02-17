@@ -56,6 +56,7 @@ const Header = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12 ml-5">
               <Link href="/" className={"header-logo block w-full py-1"}>
               <Image
+              onClick={navbarToggleHandler}
               src={logo}
               alt="Azanate Logo"
               height={30}
@@ -86,7 +87,7 @@ const Header = () => {
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
-                          <Link href={menuItem.path} className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                          <Link onClick={navbarToggleHandler} href={menuItem.path} className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path ? "text-primary dark:text-white" : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                             }`}
                           >
@@ -116,7 +117,7 @@ const Header = () => {
                               }`}
                             >
                               {menuItem.submenu.map((submenuItem, index) => (
-                                <Link href={submenuItem.path} key={index} className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3">
+                                <Link onClick={navbarToggleHandler} href={submenuItem.path} key={index} className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3">
                                   {submenuItem.title}
                                 </Link>
                               ))}
