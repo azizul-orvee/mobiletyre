@@ -8,18 +8,19 @@ const HomePage = () => {
   return (
     <>
 
-      <section className="bg-white-500 text-black pb-10 mt-16">
+      <section className="bg-white text-black pb-10 mt-16">
         <div className="container mx-auto px-4 flex flex-col md:flex-row py-10">
-          <div className="md:w-1/2 rounded-lg overflow-hidden shadow-xls">
+          <div className="md:w-1/2 rounded-lg overflow-hidden shadow-2xl">
+          
             <Image
               src={tyree}
               alt="Mobile tyre fitting image"
               width={800}
-              height={500}
+              height={800}
               placeholder="blur"
             />
           </div>
-          <div className="md:w-1/2 flex justify-center items-center text-center">
+          <div className="md:w-1/2 flex justify-center items-center text-center md:ml-5">
             <div>
               <h1 className="text-4xl font-bold mt-8 text-gray-900 font-sans">
                 Mobile <span className="text-orange-600">Tyre</span> Fitting

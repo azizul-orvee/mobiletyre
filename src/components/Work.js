@@ -1,28 +1,7 @@
 import React from "react";
-import { GiFlatTire } from "react-icons/gi";
-import WorkCard from "./WorkCard";
-import location from '/public/image/location.webp'
-import check from '/public/image/check.webp'
-import roadcar from '/public/image/roadcar.webp'
-
-
-const WorkData = [
-  {
-    step: "Step 1",
-    title: "Tell us your location",
-    icon: location,
-  },
-  {
-    step: "Step 2",
-    title: "Give us your tyre size",
-    icon: check,
-  },
-  {
-    step: "Step 3",
-    title: "You are ready to rock 'n roll again",
-    icon: roadcar,
-  },
-];
+import { IoCarSportSharp } from "react-icons/io5";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { GiTyre } from "react-icons/gi";
 
 const Work = () => {
   return (
@@ -34,14 +13,32 @@ const Work = () => {
           </h2>
         </div>
         <div className="grid grid-cols-1 mx-4 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-          {WorkData.map((service, index) => (
-            <WorkCard
-              key={index}
-              step={service.step}
-              title={service.title}
-              image={service.icon}
-            />
-          ))}
+
+    <>
+<div className="flex flex-col items-center p-6 bg-white rounded-md shadow-sm">
+<div className="p-5 rounded-full shadow-2xl"> {/* Add shadow here */}
+    <FaMapMarkerAlt size={100} />
+  </div>
+        <div className="text-gray-900 text-lg font-semibold py-2">Tell us your location</div>
+
+        </div>
+      </>
+      <>
+<div className="flex flex-col items-center p-6 bg-white rounded-md shadow-sm">
+<div className="p-5 rounded-full shadow-2xl"> {/* Add shadow here */}
+        <GiTyre size={100} />
+        </div>
+        <div className="text-gray-900 text-lg font-semibold py-2">Give Us The Tyre Size</div>
+      </div>
+      </>
+      <>
+<div className="flex flex-col items-center p-6 bg-white rounded-md shadow-sm">
+<div className="p-5 rounded-full shadow-2xl"> {/* Add shadow here */}
+        <IoCarSportSharp size={100} />
+        </div>
+        <div className="text-gray-900 text-lg font-semibold py-2">You Are Back On Road</div>
+      </div>
+      </>
         </div>
       </div>
     </div>
